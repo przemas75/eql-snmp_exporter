@@ -1,0 +1,784 @@
+# WARNING: This file was auto-generated using snmp_exporter generator, manual changes will be lost.
+equallogic:
+  walk:
+  - 1.3.6.1.4.1.12740.11.1.1.1.3
+  - 1.3.6.1.4.1.12740.11.1.1.1.5
+  - 1.3.6.1.4.1.12740.16.1.1.1
+  - 1.3.6.1.4.1.12740.16.1.2.1.1
+  - 1.3.6.1.4.1.12740.16.1.2.1.2
+  - 1.3.6.1.4.1.12740.16.1.2.1.20
+  - 1.3.6.1.4.1.12740.16.1.2.1.21
+  - 1.3.6.1.4.1.12740.16.1.2.1.3
+  - 1.3.6.1.4.1.12740.2.1.1.1.1
+  - 1.3.6.1.4.1.12740.2.1.10.1.1
+  - 1.3.6.1.4.1.12740.2.1.10.1.2
+  - 1.3.6.1.4.1.12740.2.1.11.1.1
+  - 1.3.6.1.4.1.12740.2.1.11.1.4
+  - 1.3.6.1.4.1.12740.2.1.12.1.1
+  - 1.3.6.1.4.1.12740.2.1.12.1.2
+  - 1.3.6.1.4.1.12740.2.1.12.1.3
+  - 1.3.6.1.4.1.12740.2.1.12.1.4
+  - 1.3.6.1.4.1.12740.2.1.12.1.5
+  - 1.3.6.1.4.1.12740.2.1.12.1.6
+  - 1.3.6.1.4.1.12740.2.1.12.1.7
+  - 1.3.6.1.4.1.12740.2.1.12.1.8
+  - 1.3.6.1.4.1.12740.2.1.12.1.9
+  - 1.3.6.1.4.1.12740.2.1.13.1.4
+  - 1.3.6.1.4.1.12740.2.1.6.1.3
+  - 1.3.6.1.4.1.12740.2.1.7.1.2
+  - 1.3.6.1.4.1.12740.2.1.7.1.3
+  - 1.3.6.1.4.1.12740.3.1.1.1.9
+  - 1.3.6.1.4.1.12740.3.1.2.1.1
+  - 1.3.6.1.4.1.12740.3.1.2.1.2
+  - 1.3.6.1.4.1.12740.3.1.2.1.3
+  - 1.3.6.1.4.1.12740.3.1.2.1.4
+  - 1.3.6.1.4.1.12740.3.1.3.1.6
+  - 1.3.6.1.4.1.12740.3.1.4.1.31
+  - 1.3.6.1.4.1.12740.4.1.1.1.21
+  - 1.3.6.1.4.1.12740.4.1.1.1.6
+  - 1.3.6.1.4.1.12740.4.1.1.1.7
+  - 1.3.6.1.4.1.12740.4.1.1.1.8
+  - 1.3.6.1.4.1.12740.5.1.7.1.1.1
+  - 1.3.6.1.4.1.12740.5.1.7.1.1.4
+  - 1.3.6.1.4.1.12740.5.1.7.1.1.8
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.10
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.11
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.3
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.4
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.6
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.7
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.8
+  - 1.3.6.1.4.1.12740.5.1.7.34.1.9
+  - 1.3.6.1.4.1.12740.5.1.7.7.1.13
+  - 1.3.6.1.4.1.12740.5.1.7.7.1.9
+  - 1.3.6.1.4.1.12740.5.1.8.1.1
+  metrics:
+  - name: eqliscsiSsnTotalDataTrnsfrd
+    oid: 1.3.6.1.4.1.12740.11.1.1.1.3
+    type: counter
+    help: The amount of data transfered for this session in Kilobytes - 1.3.6.1.4.1.12740.11.1.1.1.3
+    indexes:
+    - labelname: iscsiInstIndex
+      type: gauge
+    - labelname: iscsiNodeIndex
+      type: gauge
+    - labelname: iscsiSsnIndex
+      type: gauge
+  - name: eqliscsiSsnTotalDataTrnsfrd64
+    oid: 1.3.6.1.4.1.12740.11.1.1.1.5
+    type: counter
+    help: The amount of data transfered for this session in Kilobytes - 1.3.6.1.4.1.12740.11.1.1.1.5
+    indexes:
+    - labelname: iscsiInstIndex
+      type: gauge
+    - labelname: iscsiNodeIndex
+      type: gauge
+    - labelname: iscsiSsnIndex
+      type: gauge
+  - name: eqlStoragePoolIndex
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.1
+    type: gauge
+    help: This field specifies a unique index for identifying a storage pool. - 1.3.6.1.4.1.12740.16.1.1.1.1
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolRowStatus
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.2
+    type: gauge
+    help: This field is used indicate the status of this entry. - 1.3.6.1.4.1.12740.16.1.1.1.2
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+    enum_values:
+      1: active
+      2: notInService
+      3: notReady
+      4: createAndGo
+      5: createAndWait
+      6: destroy
+  - name: eqlStoragePoolName
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.3
+    type: OctetString
+    help: EQL-SECONDARY-KEY This field specifies a user friendly name for a storage
+      pool - 1.3.6.1.4.1.12740.16.1.1.1.3
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolDefaultFlag
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.4
+    type: gauge
+    help: This field specifies if this storage pool is the default pool - 1.3.6.1.4.1.12740.16.1.1.1.4
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+    enum_values:
+      1: "true"
+      2: "false"
+  - name: eqlStoragePoolRAIDConfigWaitFlag
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.5
+    type: gauge
+    help: This field specifies if the system should wait for a configured RAID-set
+      before allowing volumes to be created. - 1.3.6.1.4.1.12740.16.1.1.1.5
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+    enum_values:
+      1: "true"
+      2: "false"
+  - name: eqlStoragePoolShouldEvalMask
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.6
+    type: gauge
+    help: This field specifies one or more reasons (32-bit mask) the pool should be
+      evaluated. - 1.3.6.1.4.1.12740.16.1.1.1.6
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolLastBalance
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.7
+    type: gauge
+    help: This field specifies a timestamp of the last time the pool was balanced.
+      - 1.3.6.1.4.1.12740.16.1.1.1.7
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolDescription
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.8
+    type: DisplayString
+    help: This field contains a description of the storage pool. - 1.3.6.1.4.1.12740.16.1.1.1.8
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolLeadMemberId
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.9
+    type: gauge
+    help: This field is deprecated and will be unsupported in the next release. -
+      1.3.6.1.4.1.12740.16.1.1.1.9
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolUUID
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.10
+    type: OctetString
+    help: EQL-SECONDARY-KEY This field is for internal use only. - 1.3.6.1.4.1.12740.16.1.1.1.10
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolExecMergeTo
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.11
+    type: gauge
+    help: This field, when non-zero, specifies the index of the storage pool that
+      this pool is being merged into. - 1.3.6.1.4.1.12740.16.1.1.1.11
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolBorrow
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.12
+    type: gauge
+    help: This field specifies if borrowing is enabled for this pool. - 1.3.6.1.4.1.12740.16.1.1.1.12
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+    enum_values:
+      0: enabled
+      1: disabled
+  - name: eqlStoragePoolSnapTrimThreshold
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.13
+    type: gauge
+    help: This field specifies the threshold % of the pool capacity that indicates
+      when to begin trimming. - 1.3.6.1.4.1.12740.16.1.1.1.13
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolSnapTrimBuffer
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.14
+    type: counter
+    help: This field specifies how far below the SnapTrimThreshold to trim in MB.
+      - 1.3.6.1.4.1.12740.16.1.1.1.14
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolSnapTrimmerHWMLifeTime
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.15
+    type: gauge
+    help: This field defines the amount of time (in secs) that the trimmer will use
+      Volume In Use HWM to calculate the borrowed space for the thin volume - 1.3.6.1.4.1.12740.16.1.1.1.15
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolSnapTrimmerBorrowInfoRefreshInterval
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.16
+    type: gauge
+    help: This field defines the amount of time (in secs) after which the snap trimmer
+      will attempt to refresh its borrow information - 1.3.6.1.4.1.12740.16.1.1.1.16
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolDefaultCompressionStrategy
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.17
+    type: gauge
+    help: Default value for how compression for snapshots should be set if not specified.
+      - 1.3.6.1.4.1.12740.16.1.1.1.17
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+    enum_values:
+      0: automatic
+      1: always
+      2: never
+  - name: eqlStoragePoolDefaultCompressionMinSnapDelay
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.18
+    type: gauge
+    help: The value of this object represents how long to wait prior to marking a
+      snapshot as eligible for automatic compression - 1.3.6.1.4.1.12740.16.1.1.1.18
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolDefaultCompressionMinSnapAge
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.19
+    type: gauge
+    help: The value of this object represents the minimum amout of time a snapshot
+      is expected to kept around in order to be marked for automatic compression -
+      1.3.6.1.4.1.12740.16.1.1.1.19
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolSnapMemberTrimThresholdAmount
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.20
+    type: counter
+    help: This field specifies the per member trimming threshold used by the trimmer
+      in MB - 1.3.6.1.4.1.12740.16.1.1.1.20
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolSnapTrimRecheckTimer
+    oid: 1.3.6.1.4.1.12740.16.1.1.1.21
+    type: gauge
+    help: This field defines the interval (in seconds) that will be used to determine
+      if trimming needs to occur. - 1.3.6.1.4.1.12740.16.1.1.1.21
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolStatsSpace
+    oid: 1.3.6.1.4.1.12740.16.1.2.1.1
+    type: counter
+    help: This field specifies how many MB of space comprises this storage pool -
+      1.3.6.1.4.1.12740.16.1.2.1.1
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolStatsSpaceUsed
+    oid: 1.3.6.1.4.1.12740.16.1.2.1.2
+    type: counter
+    help: This field specifies the space used by volumes in this pool - 1.3.6.1.4.1.12740.16.1.2.1.2
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolStatsVolumeSubscribed
+    oid: 1.3.6.1.4.1.12740.16.1.2.1.20
+    type: counter
+    help: This field specifies the total subscribed space for all volumes in this
+      pool - 1.3.6.1.4.1.12740.16.1.2.1.20
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolStatsVolumeSpaceAllocated
+    oid: 1.3.6.1.4.1.12740.16.1.2.1.21
+    type: counter
+    help: The value of this object represents the sum of actual materialized pages
+      for all volumes in the pool. - 1.3.6.1.4.1.12740.16.1.2.1.21
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlStoragePoolStatsFreeSpace
+    oid: 1.3.6.1.4.1.12740.16.1.2.1.3
+    type: counter
+    help: This field specifies how many MB of space is available in this storage pool
+      - 1.3.6.1.4.1.12740.16.1.2.1.3
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlStoragePoolIndex
+      type: gauge
+  - name: eqlMemberIndex
+    oid: 1.3.6.1.4.1.12740.2.1.1.1.1
+    type: gauge
+    help: This field unique identifies an array within a group. - 1.3.6.1.4.1.12740.2.1.1.1.1
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberTotalStorage
+    oid: 1.3.6.1.4.1.12740.2.1.10.1.1
+    type: gauge
+    help: This field specifies the total disk storage in MBs on the array. - 1.3.6.1.4.1.12740.2.1.10.1.1
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberUsedStorage
+    oid: 1.3.6.1.4.1.12740.2.1.10.1.2
+    type: gauge
+    help: This field specifies sum of reserved delegated space, reserved volume space,
+      used snapshot space, used replication space. - 1.3.6.1.4.1.12740.2.1.10.1.2
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberModel
+    oid: 1.3.6.1.4.1.12740.2.1.11.1.1
+    type: DisplayString
+    help: This field specifies the model number for the array. - 1.3.6.1.4.1.12740.2.1.11.1.1
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberNumberOfDisks
+    oid: 1.3.6.1.4.1.12740.2.1.11.1.4
+    type: gauge
+    help: This field specifies the number of disk installed in the array. - 1.3.6.1.4.1.12740.2.1.11.1.4
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberNumberOfConnections
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.1
+    type: gauge
+    help: This field specifies the number of iSCSI connections made from initiators
+      to this array. - 1.3.6.1.4.1.12740.2.1.12.1.1
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberReadLatency
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.2
+    type: counter
+    help: The accumulative latency in milli seconds for read operations on this member
+      - 1.3.6.1.4.1.12740.2.1.12.1.2
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberWriteLatency
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.3
+    type: counter
+    help: The accumulative latency in milli seconds for write operations on this member
+      - 1.3.6.1.4.1.12740.2.1.12.1.3
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberReadAvgLatency
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.4
+    type: gauge
+    help: The average latency for read operations on this member in milli seconds
+      - 1.3.6.1.4.1.12740.2.1.12.1.4
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberWriteAvgLatency
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.5
+    type: gauge
+    help: The average latency for write operations on this member in milli seconds
+      - 1.3.6.1.4.1.12740.2.1.12.1.5
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberReadOpCount
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.6
+    type: counter
+    help: The number of read operations on this member - 1.3.6.1.4.1.12740.2.1.12.1.6
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberWriteOpCount
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.7
+    type: counter
+    help: The number of write operations on this member - 1.3.6.1.4.1.12740.2.1.12.1.7
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberTxData
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.8
+    type: counter
+    help: The count of data octets trasmitted by this member.The value is reset to
+      zero upon reboot. - 1.3.6.1.4.1.12740.2.1.12.1.8
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberRxData
+    oid: 1.3.6.1.4.1.12740.2.1.12.1.9
+    type: counter
+    help: The count of data octets received by this member.The value is reset to zero
+      upon reboot. - 1.3.6.1.4.1.12740.2.1.12.1.9
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberNumberOfSpares
+    oid: 1.3.6.1.4.1.12740.2.1.13.1.4
+    type: gauge
+    help: This field specifies the number disks allocated as spares in an array. -
+      1.3.6.1.4.1.12740.2.1.13.1.4
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+  - name: eqlMemberHealthDetailsTemperatureValue
+    oid: 1.3.6.1.4.1.12740.2.1.6.1.3
+    type: gauge
+    help: The value of this object is temperature in degrees C - 1.3.6.1.4.1.12740.2.1.6.1.3
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlMemberHealthDetailsTempSensorIndex
+      type: gauge
+  - name: eqlMemberHealthDetailsFanName
+    oid: 1.3.6.1.4.1.12740.2.1.7.1.2
+    type: DisplayString
+    help: This field specifies the name of the fan that we display to the user. -
+      1.3.6.1.4.1.12740.2.1.7.1.2
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlMemberHealthDetailsFanIndex
+      type: gauge
+  - name: eqlMemberHealthDetailsFanValue
+    oid: 1.3.6.1.4.1.12740.2.1.7.1.3
+    type: gauge
+    help: The value of this object is fan speed in rpm. - 1.3.6.1.4.1.12740.2.1.7.1.3
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlMemberHealthDetailsFanIndex
+      type: gauge
+  - name: eqlDiskErrors
+    oid: 1.3.6.1.4.1.12740.3.1.1.1.9
+    type: counter
+    help: This variable specifies the number of disk errors since drive power on.
+      - 1.3.6.1.4.1.12740.3.1.1.1.9
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlDiskIndex
+      type: gauge
+  - name: eqlDiskStatusXfers
+    oid: 1.3.6.1.4.1.12740.3.1.2.1.1
+    type: counter
+    help: Total number of succesfull transfers - 1.3.6.1.4.1.12740.3.1.2.1.1
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlDiskIndex
+      type: gauge
+  - name: eqlDiskStatusBytesRead
+    oid: 1.3.6.1.4.1.12740.3.1.2.1.2
+    type: counter
+    help: This variable specifies total number of Mbytes read. - 1.3.6.1.4.1.12740.3.1.2.1.2
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlDiskIndex
+      type: gauge
+  - name: eqlDiskStatusBytesWritten
+    oid: 1.3.6.1.4.1.12740.3.1.2.1.3
+    type: counter
+    help: This variable specifies total number of Mbytes written. - 1.3.6.1.4.1.12740.3.1.2.1.3
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlDiskIndex
+      type: gauge
+  - name: eqlDiskStatusBusyTime
+    oid: 1.3.6.1.4.1.12740.3.1.2.1.4
+    type: counter
+    help: This variable specifies total time in seconds spent busy. - 1.3.6.1.4.1.12740.3.1.2.1.4
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlDiskIndex
+      type: gauge
+  - name: eqlDiskErrorCRC
+    oid: 1.3.6.1.4.1.12740.3.1.3.1.6
+    type: counter
+    help: This variable specifies CRC error count. - 1.3.6.1.4.1.12740.3.1.3.1.6
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlDiskIndex
+      type: gauge
+  - name: eqlDiskSmartInfoHDDTemp
+    oid: 1.3.6.1.4.1.12740.3.1.4.1.31
+    type: gauge
+    help: ' - 1.3.6.1.4.1.12740.3.1.4.1.31'
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlDiskIndex
+      type: gauge
+  - name: eqlControllerCPUfreq
+    oid: 1.3.6.1.4.1.12740.4.1.1.1.21
+    type: gauge
+    help: This variable specifies the cpu freq in MHz. - 1.3.6.1.4.1.12740.4.1.1.1.21
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlControllerIndex
+      type: gauge
+  - name: eqlControllerUpTime
+    oid: 1.3.6.1.4.1.12740.4.1.1.1.6
+    type: counter
+    help: This variable specifies time interval since the controller was last booted
+      in seconds. - 1.3.6.1.4.1.12740.4.1.1.1.6
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlControllerIndex
+      type: gauge
+  - name: eqlControllerProcessorTemp
+    oid: 1.3.6.1.4.1.12740.4.1.1.1.7
+    type: gauge
+    help: This variable specifies the temperature in Celsius. - 1.3.6.1.4.1.12740.4.1.1.1.7
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlControllerIndex
+      type: gauge
+  - name: eqlControllerChipsetTemp
+    oid: 1.3.6.1.4.1.12740.4.1.1.1.8
+    type: gauge
+    help: This variable specifies the temperature in Celsius. - 1.3.6.1.4.1.12740.4.1.1.1.8
+    indexes:
+    - labelname: eqlGroupId
+      type: gauge
+    - labelname: eqlMemberIndex
+      type: gauge
+    - labelname: eqlControllerIndex
+      type: gauge
+  - name: eqliscsiVolumeIndex
+    oid: 1.3.6.1.4.1.12740.5.1.7.1.1.1
+    type: gauge
+    help: This field specifies a unique index for identifing a volume. - 1.3.6.1.4.1.12740.5.1.7.1.1.1
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeName
+    oid: 1.3.6.1.4.1.12740.5.1.7.1.1.4
+    type: OctetString
+    help: EQL-SECONDARY-KEY This field specifies a user friendly name for a volume
+      - 1.3.6.1.4.1.12740.5.1.7.1.1.4
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeSize
+    oid: 1.3.6.1.4.1.12740.5.1.7.1.1.8
+    type: gauge
+    help: This field specifies the volume size in MB - 1.3.6.1.4.1.12740.5.1.7.1.1.8
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsReadAvgLatency
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.10
+    type: gauge
+    help: The average latency in milli seconds for read operations on this volume.
+      - 1.3.6.1.4.1.12740.5.1.7.34.1.10
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsWriteAvgLatency
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.11
+    type: gauge
+    help: The average latency in milli seconds for write operations on this volume.
+      - 1.3.6.1.4.1.12740.5.1.7.34.1.11
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsTxData
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.3
+    type: counter
+    help: The count of data octets that were transmitted by the local iSCSI node.
+      - 1.3.6.1.4.1.12740.5.1.7.34.1.3
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsRxData
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.4
+    type: counter
+    help: The count of data octets that were received by the local iSCSI node. - 1.3.6.1.4.1.12740.5.1.7.34.1.4
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsReadLatency
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.6
+    type: counter
+    help: The accumulative latency in milli seconds for read operations on this volume.
+      - 1.3.6.1.4.1.12740.5.1.7.34.1.6
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsWriteLatency
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.7
+    type: counter
+    help: The accumulative latency in milli seconds for write operations on this volume.
+      - 1.3.6.1.4.1.12740.5.1.7.34.1.7
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsReadOpCount
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.8
+    type: counter
+    help: The number of read operations on this volume. - 1.3.6.1.4.1.12740.5.1.7.34.1.8
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatsWriteOpCount
+    oid: 1.3.6.1.4.1.12740.5.1.7.34.1.9
+    type: counter
+    help: The number of write operations on this volume. - 1.3.6.1.4.1.12740.5.1.7.34.1.9
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatusAllocatedSpace
+    oid: 1.3.6.1.4.1.12740.5.1.7.7.1.13
+    type: gauge
+    help: The value of this object represents the actual materialized pages for this
+      volume. - 1.3.6.1.4.1.12740.5.1.7.7.1.13
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiVolumeStatusConnections
+    oid: 1.3.6.1.4.1.12740.5.1.7.7.1.9
+    type: gauge
+    help: The value of this object represents number of active iscsi connections to
+      this volume - 1.3.6.1.4.1.12740.5.1.7.7.1.9
+    indexes:
+    - labelname: eqliscsiLocalMemberId
+      type: gauge
+    - labelname: eqliscsiVolumeIndex
+      type: gauge
+  - name: eqliscsiNodeIndex
+    oid: 1.3.6.1.4.1.12740.5.1.8.1.1
+    type: gauge
+    help: The node index of the iSCSI target node - 1.3.6.1.4.1.12740.5.1.8.1.1
+    indexes:
+    - labelname: eqliscsiNodeIndex
+      type: gauge
