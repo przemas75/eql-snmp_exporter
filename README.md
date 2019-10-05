@@ -1,6 +1,6 @@
 # eql-snmp_exporter
 
-YAML config for snmp_exporter to monitor Dell Equallogic with snmp service in grafana.
+YAML config for snmp_exporter to monitor Dell Equallogic with snmp service enbaled and storing data in prometheus, visualization by grafana.
 
 It contains also original generator.yml for generating final snmp.yml.
 ```
